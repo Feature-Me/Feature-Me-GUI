@@ -1,0 +1,30 @@
+{
+  "name": "feature-me-gui",
+  "version": "0.0.1",
+  "description": "Feature Me GUI component collections",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feature-Me/Feature-Me-GUI.git"
+  },
+  "keywords": [],
+  "author": "Mksk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Feature-Me/Feature-Me-GUI/issues"
+  },
+  "homepage": "https://github.com/Feature-Me/Feature-Me-GUI#readme",
+  "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/react": "^18.0.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "scss": "^0.2.4",
+    "typescript": "^4.8.3"
+  }
+}
