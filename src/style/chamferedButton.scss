@@ -1,0 +1,32 @@
+@import "variables";
+
+.chamferedbutton {
+    position: relative;
+    padding: 4px;
+    margin: 4px;
+    color: $textColor;
+    background-color: $borderColor;
+    box-sizing: border-box;
+    line-height: 24px;
+    transition: 0.2s;
+    border: none;
+    clip-path: $chamferedClip;
+
+    &:before {
+        content: "";
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 2px;
+        background-color: $backgroundColor;
+        z-index: -1;
+        clip-path: $chamferedClip;
+        
+    }
+
+    &:hover {
+        background-color: $accentColor;
+    }
+}
