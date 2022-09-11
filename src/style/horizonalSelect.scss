@@ -1,0 +1,59 @@
+.horizonalSelect {
+    box-sizing: border-box;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    grid-template-rows: 38px;
+    border: 1px solid $borderColor;
+
+    .arrowBtn {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid whitesmoke;
+
+        &:hover {
+            color: $accentColor;
+            border: 1px solid $accentColor;
+            transition: 0.2s;
+        }
+    }
+
+    .label {
+        display: grid;
+        grid-template-rows: 28px 12px;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+
+        span {
+            line-height: 28px;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .indexPoint {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-auto-columns: 1fr;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-items: center;
+
+            div {
+                width: 100%;
+                height: 8px;
+                background-color: $backgroundColor;
+
+                &[data-index="true"] {
+                    background-color: $accentColor;
+                }
+            }
+        }
+    }
+}

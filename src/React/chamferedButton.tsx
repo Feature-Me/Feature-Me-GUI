@@ -1,6 +1,6 @@
 import React from "react";
 
-import style from "src/style/chamferedButton.scss"
+import style from "../style/chamferedButton.scss"
 
 
 
@@ -27,10 +27,11 @@ const ChamferedButton: React.FC<buttonPropsType> = (props) => {
     }
 
     return (
-        <button onClick={props.onClick} className={`${style.chamferedbutton} ${props.className || ""}`} ref={chamferedButtonRef}>
+        <button {...props} className={`${style.chamferedbutton} ${props.className || ""}`} ref={chamferedButtonRef}>
             {props.children}
         </button>
     )
 }
+
 
 export default ChamferedButton;
